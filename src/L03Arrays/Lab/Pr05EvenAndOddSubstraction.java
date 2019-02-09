@@ -7,7 +7,10 @@ public class Pr05EvenAndOddSubstraction {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        int[] numbers = Arrays.stream(scanner.nextLine().split(" ")).mapToInt(e -> Integer.parseInt(e)).toArray();
+        int[] numbers = Arrays.stream(scanner.nextLine()
+                .split("\\s+"))
+                .mapToInt(Integer::parseInt)
+                .toArray();
 
         int evenSum = 0;
         int oddSum = 0;

@@ -15,11 +15,11 @@ public class Pr05EvenAndOddSubstraction {
         int evenSum = 0;
         int oddSum = 0;
 
-        for (int i = 0; i < numbers.length; i++) {
-            if (numbers[i] % 2 == 1) {
-                oddSum += numbers[i];
+        for (int number : numbers) {
+            if (number % 2 == 1) {
+                oddSum += number;
             } else {
-                evenSum += numbers[i];
+                evenSum += number;
             }
         }
         System.out.println(evenSum - oddSum);

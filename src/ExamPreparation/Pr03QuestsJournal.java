@@ -6,6 +6,6 @@ public class Pr03QuestsJournal {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-
+//TODO
     }
 }
